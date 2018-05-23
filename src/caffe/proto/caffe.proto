@@ -251,7 +251,7 @@ message SolverParameter {
   // If command line --weights parameter if specified, it has higher priority
   // and owerwrites this one(s).
   // If --snapshot command line parameter is specified, this one(s) are ignored.
-  // If several model files are expected, they can be listed in a one 
+  // If several model files are expected, they can be listed in a one
   // weights parameter separated by ',' (like in a command string) or
   // in repeated weights parameters separately.
   repeated string weights = 42;
@@ -1158,6 +1158,9 @@ message ROIPoolingParameter {
   // Multiplicative spatial scale factor to translate ROI coords from their
   // input scale to the scale used when pooling
   optional float spatial_scale = 3 [default = 1];
+  optional float pad_ratio = 4 [default = 0];
+  optional uint32 bi_type = 5 [default = 0];
+  optional bool is_multi_interpolate = 6 [default = false];
 }
 
 message ScaleParameter {
