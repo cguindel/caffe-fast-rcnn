@@ -12,7 +12,7 @@
 #include "caffe/layers/pooling_layer.hpp"
 #include "caffe/layers/lrn_layer.hpp"
 #include "caffe/layers/im2col_layer.hpp"
-#include "caffe/fast_rcnn_layers.hpp"
+#include "caffe/layers/smooth_l1_loss_layer.hpp"
 
 #include "caffe/test/test_caffe_main.hpp"
 #include "caffe/test/test_gradient_check_util.hpp"
